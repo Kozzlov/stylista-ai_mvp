@@ -2,9 +2,9 @@ import os
 
 from flask import Flask, render_template, request, url_for, flash
 from werkzeug.utils import secure_filename, redirect
-from ai_stylist import references, find_deep_fashion_clothing_set_for_url_references, find_deep_fashion_clothing_set_for_path_references
+from ai_stylist import find_deep_fashion_clothing_set_for_url_references, find_deep_fashion_clothing_set_for_path_references
 
-UPLOAD_FOLDER = 'static/uploads/'
+UPLOAD_FOLDER = 'static/uploads'
 
 app = Flask(__name__)
 
@@ -15,29 +15,6 @@ ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
 references = ['https://i.pinimg.com/736x/b3/2e/42/b32e424d87006792d1eeea79423a2cf2.jpg']
 paths = ["static/uploads/reference_1.jpg"]
-
-              # 'https://onpointfresh.com/wp-content/uploads/2016/08/tumblr_o2hadekN0v1uceufyo1_500.jpg',
-              # 'https://onpointfresh.com/wp-content/uploads/2016/08/tumblr_o9iygiboae1uceufyo1_1280.jpg',
-              # 'https://i.pinimg.com/originals/6c/cf/18/6ccf181f6261dd2b290dc395ac1d9007.jpg',
-              # 'https://i.pinimg.com/564x/a6/2a/d7/a62ad7f7be29074e486db6cdc32be8d7--smart-casual-work-casual-work-outfits.jpg',
-              # 'https://i.pinimg.com/originals/85/7e/f3/857ef3f7b32fa62f26aa5bd909a4d4f8.jpg',
-              # 'https://i.pinimg.com/originals/a1/15/5b/a1155b228226de5a12feea05f59e4d30.jpg',
-              #'https://i.pinimg.com/originals/c9/2c/8d/c92c8d912696542de3f7771c16aebccb.jpg']
-              # 'https://i.pinimg.com/originals/b2/ac/62/b2ac621b97e6999f2235ad4bba600ca4.jpg',
-              # 'https://media.gq-magazine.co.uk/photos/5d1399512881cc9fe10a84a4/master/w_1280,h_1920,c_limit/Street-Style-06-27Nov17_Robert-Spangle_b.jpg',
-              # 'https://i.pinimg.com/564x/1c/cc/be/1cccbe0ec79b484a367a704c8d08bfbf.jpg',
-              # 'https://i.pinimg.com/originals/a4/43/57/a4435723c85e5a9f7d27f0ee19090aa7.jpg']
-
-paths = ["static/uploads/reference_1.jpg"]
-print(len(paths))
-# references_2 = ['https://i.pinimg.com/564x/a6/2a/d7/a62ad7f7be29074e486db6cdc32be8d7--smart-casual-work-casual-work-outfits.jpg',
-#                 'https://i.pinimg.com/originals/85/7e/f3/857ef3f7b32fa62f26aa5bd909a4d4f8.jpg',
-#                 'https://i.pinimg.com/originals/a1/15/5b/a1155b228226de5a12feea05f59e4d30.jpg',
-#                 'https://i.pinimg.com/originals/c9/2c/8d/c92c8d912696542de3f7771c16aebccb.jpg']
-#                      'https://i.pinimg.com/564x/4e/e7/16/4ee716810c3c5d301a2169d0425b037a.jpg',
-#                      'https://i.pinimg.com/originals/61/d2/b6/61d2b66fea7b355b2c01979bd85bac46.jpg',
-#                      'https://i.pinimg.com/564x/cc/f8/ba/ccf8bae685ad1b8636e79bf5383e8f8c.jpg',
-#                      'http://babd.wincenworks.com/wp-content/uploads/2019/11/e0ac335a23fd55de50396f22717167dd54bba9a9.png']
 
 @app.route('/', methods=['POST', 'GET'])
 def display_references_with_matches():
@@ -96,7 +73,7 @@ def upload_reference_image():
     return '''
     <!doctype html>
     <title>Upload new File</title>
-    <h1>Upload new file</h1>
+    <h1>Upload new File</h1>
     <form method=post enctype=multipart/form-data>
       <input type=file name=file>
       <input type=submit value=Upload>
@@ -106,7 +83,3 @@ def upload_reference_image():
 if __name__ == "__main__":
     app.debug = True
     app.run()
-
-# web: gunicorn test.wsgi
-# web: gunicorn app:app --timeout 1000
-# web: gunicorn run:app
