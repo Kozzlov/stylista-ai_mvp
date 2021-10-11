@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "stylista-ai",
-  "private_key_id": "b42e3e125a0e2228045ff51e084d410f81b1c0b0",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDiJ11566Mpm/4K\nwwKFcYsCBmkD4OGpOVuGZPXHDZZdSqb5e8yr2L78mEvtKLaNxuzUqhNSOGlyOVXP\nox/g89+NHfb8HILyc3uuSc8z6W4WaeqEZjKMCd82oa/JnUNUpl6m/tXlkadykYjx\nJxQvCgRxnIhTKrdJ3jLaaG5M/FSlwpERjUmIe2wSrTFK4pmhw4CGIYrmBoGaXz7u\nRI9S0LHrGmTtSw9sNMVWiRGY+GXrTY79obBIAe5Auj60uGgH+nm26XZNEtKBACZ6\nYHJrUv04afaoRpYaMSiHLZ3vkfdoeaRyEVjktzt5MfA7EAIanLWwEQTans0Y1bEg\neW+WUFP9AgMBAAECggEABfHgdmvADIA1/5zsNEtNiuZVvN0cuXjRQ9lkD5E3Hmkv\ntfev4+WM8bFkL44GLHhp8dYtr1fdx7ujmpNwa1alzf0XaL2sIIjyG50DlhsBApRS\nrpvMINvCkxpRd2SLqE4+RzgEMeZwByY1uhcbo/fosX7ao4sIKeguIIklux7X78p+\no9/V9wtUBbJdPQxsCKzLWkMqeYLXqNvUA98474FNO1lP/gQLoNRZIcd4qvoIpV7S\nk0bf0iQVNobQdOl/YGKukUhSm2IW9zs3isDciJIOSUw26pFUUAGp6mhA/YHds1RE\niFYWNoB4QynyqCsht/k+yuqowaNOA3TmDJnMoct3yQKBgQD2fF+vHmHoO7QieSxg\nrXavFVMxPAmT+5swf2hxQleNsmjRlXTiRLB/F2Xfa/L7UsLBpfWgcu4AmzoLYpsR\nHpESIVwvYTvdFJMH2gsyVmxtRQmsb07EWX5GT346NwAgwu59E0SLWKYXEB0kvjQF\nfFo+9M/WvLAs/GxcJOn/YRK62QKBgQDq4hT/JUqniX67ncofYXjWL/oKXByg/LhC\n7urbfrxsAoXDJLZ3UvxPvPLos3lOTUf6Pe9J5TcYBKy+5X69pgzfBsORyO074uhE\nopOLlJJT3SkNqdSB8SVRIvepTRRHLo6hGFiXOIbeQGhyKX078XGRRQN8T3skGlgX\n8gkIUqYDxQKBgEpe0IgIBMaLbRiRsyAgdpTxPD64vLMX0YVai+rQd5ZbZGEIVVII\nI7DVIHm/GntWR0kih/A3fTRVobfZsqwBqwfrZOMu1V8pXAuccJBpnyGBGSAcHYoE\n7qLMTWvHOJSp/EdkzuO0hbijtgdmFFAraxdfym4iVI3eQ9uxj6DsazhRAoGAa9EZ\neEEi8qKfpPl6JUt1z0O4j/bWQWOgJUFMVzLmxOGnivsYMs/J98Qw8HYp0bKRvqGd\nbJsl3gWPUhVAR0eoktuk/A9yLlIq8g56kdDCFnLnfFkfrgIGcicN7g3up/oMCJCH\nYerVpcGE8BpxXQmoatl2DyLg0KKzG1LDqKlfgU0CgYATup+ZcG7MW3Y29abwEAxv\npC105maPCRRsZbw3n9ECDJdgQeKEiX78AHknGWka11TC5ipItxHAgKc44lm9shxn\nAZ+A+iuZQglfQZI3KwB37rWtIGWuByw7YciqwBomUWJ49FcaS8cH15M4bQC2Bsev\nG9HCJNeOYLk4bpinjLoYyw==\n-----END PRIVATE KEY-----\n",
-  "client_email": "ai-stylist-service-account@stylista-ai.iam.gserviceaccount.com",
-  "client_id": "101434433961333041396",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ai-stylist-service-account%40stylista-ai.iam.gserviceaccount.com"
-}
+
