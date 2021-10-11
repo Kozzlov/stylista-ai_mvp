@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+    width: 19%;
+    height: 48%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+</style>
+</head>
+<body>
+<section>
+{% for match in path_set %}
+    <p>Recommendation with proposed cloting from your wardrobe</p>
+    <img style="background-color: goldenrod; object-fit: contain " src={{ match[0] }}>
+    {% for match_category, category_matches in match[1].items() %}
+        {% if match_category == 'tops' %}
+            <p>Recommended tops</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+        {% if match_category == 'bottoms' %}
+            <p>Recommended bottoms</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+        {% if match_category == 'overalls' %}
+            <p>Recommended overalls</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+    {% endfor %}<hr color="goldenrod" style="height:3px; background-color: goldenrod">
+{% endfor %}
+</section>
+<section>
+{% for match in match_set %}
+    <img style="background-color: goldenrod; object-fit: contain " src={{ match[0] }}>
+    {% for match_category, category_matches in match[1].items() %}
+        {% if match_category == 'tops' %}
+            <p>Recommended tops</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+        {% if match_category == 'bottoms' %}
+            <p>Recommended bottoms</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+        {% if match_category == 'overalls' %}
+            <p>Recommended overalls</p><br>
+            {% for match_within_category in category_matches %}
+                <img src={{ match_within_category }}>
+            {%  endfor %}
+        {% endif %}
+    {% endfor %}<hr color="goldenrod" style="height:3px; background-color: goldenrod">
+{% endfor %}
+</section>
+</body>
+</html>
